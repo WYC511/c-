@@ -1,0 +1,22 @@
+class myqueen
+{
+private:
+int p_quen;//reference to queen;
+vector<int> quen;//queen
+bool myqueen(){ p_quen=0;}//new queen function
+prublic:
+bool enqueen(int x)
+{quen.pushback(x);}
+
+bool dequeen()
+{if(isempty)
+return false;
+p_quen++;
+return true}
+
+int front()
+{return quen[p_quen];}
+
+bool isempty()
+{return p_quen=>quen.size();}
+}
