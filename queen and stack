@@ -20,3 +20,77 @@ int front()
 bool isempty()
 {return p_quen=>quen.size();}
 }
+
+
+//circularquene
+class MyCircularQueue {
+private:
+int size;
+int tail;
+int head;
+vector<int> data;
+
+public;
+MyCircularQueue(int k) 
+{size=k;
+ head=-1;
+ tail=-1;
+ data.resize(k);
+}
+
+bool enQueue(int value) 
+{if(isFull())
+{return false;}
+if (isEmpty())
+{head=0;}
+tail=(tail+1)%size;
+data[tail]=value;
+return true;
+}
+ bool deQueue() 
+ {if(isEmpty())
+ {return false;}
+ if(head==tail)
+ {
+  tail=-1;
+  head=-1;
+  return true;
+ }
+  head=(head+1)%size;
+  return true;
+  }
+  
+  int Front()
+  {if(isEmpty())
+  return -1;
+  return data[head];
+  }
+  int rear()
+  {is(isEmpty())
+  return -1;
+  return data[tail]
+  
+  bool isEmpty()
+  {return head==-1;}
+  bool isFull
+  {return head==(tail+1)%size;}
+  //
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
